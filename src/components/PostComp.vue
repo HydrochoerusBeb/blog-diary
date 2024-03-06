@@ -4,6 +4,7 @@
         <div class='button-space'>
             <button class='post-wrapper-button-comms' @click='openComments'>Comms</button>
             <button class='post-wrapper-button-change' @click='openModal()'>Change post</button>
+            <p class='counter-comment'>Количество комментариев - {{ comments.length }}</p>
         </div>
         <div class='func-section' v-if="isShow">
             <div class="newComm-section">
@@ -139,7 +140,7 @@ let openComments= () => {
 }
 
 .button-space{
-    width: 15%;
+    width: 40%;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
